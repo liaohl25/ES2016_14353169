@@ -155,4 +155,5 @@ pull成功以后，会出现冲突，然后去[解决冲突](http://www.liaoxuef
 <img src="https://raw.githubusercontent.com/liaohl25/MarkdownImg/master/res/%E6%8D%95%E8%8E%B7.PNG" width="300" alt="configure"/>
 
 现在大概明白了原来是自己同时push不同版本的文档，虽然我也不知道自己怎么做到的…应该是不熟悉操作，然后就胡乱执行语句。因为之前没有开始操作，很多老师博客里的东西看不懂，就还没看完，现在一定会找时间学习的。最后，放上一张成功push的截图，太不容易了。
+
 <img src="https://raw.githubusercontent.com/liaohl25/MarkdownImg/master/res/push.PNG" width="500" alt="configure"/>
