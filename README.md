@@ -34,7 +34,7 @@ $	sudo wget http://www.tik.ee.ethz.ch/~shapes/downloads/dol_ethz.zip
 
 	`$	mkdir dol`
 
-	2、将dolethz.zip解压到 dol文件夹
+	2、将dolethz.zip解压到 dol文件夹中
 
 	`$	unzip dol_ethz.zip -d dol`
 
@@ -60,7 +60,7 @@ $	sudo wget http://www.tik.ee.ethz.ch/~shapes/downloads/dol_ethz.zip
 
 	`$	../configure CXX=g++ --disable-async-updates`
 
-	下图为运行configure后的截图：
+	下图为运行configure之后的截图：
 
 	<img src="https://raw.githubusercontent.com/liaohl25/MarkdownImg/master/res/5.jpg" width="500" alt="configure"/>
 
