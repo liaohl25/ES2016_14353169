@@ -130,3 +130,29 @@ $	sudo wget http://www.tik.ee.ethz.ch/~shapes/downloads/dol_ethz.zip
 之前有浏览过过Github上的一些代码，但是完全没有了解过Github和Git，学习Git过程中，虽然有很浅显易懂的教程，但还是感觉有很多看不懂的地方，还是要结合操作来学习。在这次实验中，首先在Github上创建好仓库，然后在虚拟机上创建本地库，然后将仓库和本地库连接起来。
 
 关联好仓库和本地库后，编辑dol配置笔记。除了Github和Git，也没有使用过markdown,markdown操作起来还是比较容易上手的。由于之前dol配置之前顺利地完成了，但是都没有截图，所以写安装笔记的时候又去重复了一遍操作，但有一些中间过程的图就没办法截了。花了比较多的时间插入图片，上网查了一些资料，最后采用先把图片放在Github的仓库，然后复制链接粘贴到markdown里边。应该还有其他更加简便的方法，自己还没有研究好怎么使用。编辑好以后把文档放入本地库，然后上传到Github仓库中。虽然实验内容看起来不多，但是整个实验完成得挺艰辛的。
+
+后续：原本以为写好了文档，然后可以按照网上的教程把文档push到Github上就好了，但事实证明我想得太简单了。整个push的过程，先是config失败了，好不容易发现是自己少打了两个空格……解决以后又出现类似下面的一系列错误  
+
+<img src="https://raw.githubusercontent.com/liaohl25/MarkdownImg/master/res/error2.PNG" width="470" alt="configure"/>
+<br/>
+<img src="https://raw.githubusercontent.com/liaohl25/MarkdownImg/master/res/error.PNG" width="550" alt="configure"/>
+
+查了解决方案所以尝试各种解决的语句，然后又冒出各种错误，一路摸索，磕磕碰碰，git也重装了很多次。最后面还是在廖雪峰老师的教程找到解决方法。针对上图中后面那种错误，老师是这样说的：
+
+> 推送失败，因为你的小伙伴的最新提交和你试图推送的提交有冲突，解决办法也很简单，Git已经提示我们，先用git pull把最新的提交从origin/dev抓下来，然后，在本地合并，解决冲突，再推送
+
+按照老师的[解决方案](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013760174128707b935b0be6fc4fc6ace66c4f15618f8d000)，依次先执行下面两句：
+<pre>
+$	git branch
+$	git pull
+</pre>
+pull成功以后，会出现冲突，然后去[解决冲突](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001375840202368c74be33fbd884e71b570f2cc3c0d1dcf000)。后面执行语句：
+
+`$ git log --graph --pretty=oneline --abbrev-commit`
+
+看到了分支的合并情况：
+
+<img src="https://raw.githubusercontent.com/liaohl25/MarkdownImg/master/res/%E6%8D%95%E8%8E%B7.PNG" width="300" alt="configure"/>
+
+现在大概明白了原来是自己同时push不同版本的文档，虽然我也不知道自己怎么做到的…应该是不熟悉操作，然后就胡乱执行语句。因为之前没有开始操作，很多老师博客里的东西看不懂，就还没看完，现在一定会找时间学习的。最后，放上一张成功push的截图，太不容易了。
+<img src="https://raw.githubusercontent.com/liaohl25/MarkdownImg/master/res/push.PNG" width="500" alt="configure"/>
