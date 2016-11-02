@@ -79,7 +79,7 @@ source ~/.bashrc
 source /opt/ros/jade/setup.bash
 </pre>
 
-**1.７ 安装 rosinstall**
+**1.7 安装 rosinstall**
 
 　　rosinstall 是ROS中一个独立分开的常用命令行工具，它可以方便让你通过一条命令就可以给某个ROS软件包下载很多源码树。
 <pre>
