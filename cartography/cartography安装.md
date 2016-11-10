@@ -179,9 +179,11 @@ roslaunch cartographer_ros demo_backpack_3d.launch bag_filename:=${HOME}/Downloa
 **6.3 运行结果**
 
 　　2d图像：
+  
 <img src="https://raw.githubusercontent.com/liaohl25/MarkdownImg/master/res/2d.PNG" width="300" alt="configure"/>
 
 　　由于3d数据包打开的时候出错了，无法运行出3d图像，运行结果为：
+  
 <img src="https://raw.githubusercontent.com/liaohl25/MarkdownImg/master/res/3d.PNG" width="300" alt="configure"/>
 
 
